@@ -20,16 +20,16 @@
                 <div class="card-body">
                     <form>
                         <div class="form-group text-center">
-                            <img src="img/logo.jpg" alt="70" width="170"/>
+                            <img src="img/logo.jpg" alt="70" width="170"/><br>
                             <label>Bienvenidos al sistema</label>
                         </div>
                         <div class="form-group">
                             <label>Usuario :</label>
-                            <input type="text" name="txtUser" class="form-control">
+                            <input type="text"  class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Contraseña :</label>
-                            <input type="password" name="txtPass" class="form-control">
+                            <input type="password"  class="form-control">
                         </div>
                         <input type="submit" name="accion" value="Ingresar" class="btn-primary">
                     </form>
