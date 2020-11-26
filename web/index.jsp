@@ -16,22 +16,23 @@
     </head>
     <body>
         <div class="container mt-4 col-lg-4">
-            <div class="card">
+            <div class="card col-sm-10">
                 <div class="card-body">
-                    <form>
+                    <form class="form-sing" action="Validar" method="POST">
                         <div class="form-group text-center">
-                            <img src="img/logo.jpg" alt="70" width="170"/><br>
+                            <img src="img/logo.png" alt="70" width="170"/>
+                            <br><br>
                             <label>Bienvenidos al sistema</label>
                         </div>
                         <div class="form-group">
                             <label>Usuario :</label>
-                            <input type="text"  class="form-control">
+                            <input type="text" name="txtUser" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Contraseña :</label>
-                            <input type="password"  class="form-control">
+                            <input type="password" name="txtPass" class="form-control">
                         </div>
-                        <input type="submit" name="accion" value="Ingresar" class="btn-primary">
+                        <input type="submit" name="accion" value="Ingresar" class=" btn btn-primary">
                     </form>
                 </div>
             </div>
