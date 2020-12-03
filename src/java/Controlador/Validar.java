@@ -67,11 +67,16 @@ public class Validar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String accion = request.getParameter("accion");
+        
         if (accion.equalsIgnoreCase("Ingresar")) {
-            String user = request.getParameter("txtuser");
-            String pass = request.getParameter("txtpass");
+            
+            String user = request.getParameter("txtUser");
+            String pass = request.getParameter("txtPass");
+            
             em = edao.validar(user, pass);
+            
             if(em.getUserEmpleado()!=null){
+                request.getSession().setAttribute("usuario", em);
                 request.getRequestDispatcher("Controlador?accion=Principal").forward(request, response);
             }else{
                 request.getRequestDispatcher("index.jsp").forward(request, response);

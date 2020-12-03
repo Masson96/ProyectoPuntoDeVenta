@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 public class Conexion {
     
     Connection con;
-    String url="jdbc:mysql://localhost:3306/bd_puntoventa";
+    String url="jdbc:mysql://localhost:3306/bdPuntoVenta";
     String user="root";
     String pass="1234";
     

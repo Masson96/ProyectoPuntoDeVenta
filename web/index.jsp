@@ -20,19 +20,19 @@
                 <div class="card-body">
                     <form class="form-sing" action="Validar" method="POST">
                         <div class="form-group text-center">
-                            <img src="img/logo.png" alt="70" width="170"/>
+                            <img src="images/logo.png" alt="70" width="170"/>
                             <br><br>
                             <label>Bienvenidos al sistema</label>
                         </div>
                         <div class="form-group">
                             <label>Usuario :</label>
-                            <input type="text" name="txtUser" class="form-control">
+                            <input type="text" name="txtuser" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Contraseña :</label>
-                            <input type="password" name="txtPass" class="form-control">
+                            <input type="password" name="txtpass" class="form-control" placeholder="Ingrese su clave">
                         </div>
-                        <input type="submit" name="accion" value="Ingresar" class=" btn btn-primary">
+                        <input type="submit" name="accion" value="Ingresar" class=" btn btn-primary btn-block">
                     </form>
                 </div>
             </div>
