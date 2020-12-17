@@ -12,22 +12,25 @@ public class EmpleadoDAO {
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
+    int r=0;
     
-    public Empleado validar(String user, String dni){
+    public Empleado Validar(String user, String dni){
         Empleado em = new Empleado();
-        String sql = "select * from empleado where User_empleado=? and Dni_empleado=?";
+        String sql = "select * from empleado where User=? and Dni=?";
         try {
-            con=cn.Conexion();
-            ps=con.prepareStatement(sql);
-            rs=ps.executeQuery();
-            while (rs.next()) {                
-                em.setIdEmpleado(rs.getInt("idEmpleado"));
-                em.setUserEmpleado(rs.getString("User_empleado"));
-                em.setDniEmpleado(rs.getString("Dni_empleado"));
-                em.setNombreEmpleado(rs.getString("Nombres_empleado"));
+            con = cn.Conexion();
+            ps = con.prepareStatement(sql);
+            ps.setString(1, user);
+            ps.setString(2, dni);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                em.setIdEmpleado(rs.getInt("IdEmpleado"));
+                em.setUser(rs.getString("User"));
+                em.setDni(rs.getString("Dni")); 
+                em.setNombre (rs.getString("Nombres"));
             }
         } catch (Exception e) {
-            System.err.println("ERROR");
+            System.err.println("ERROR"+e);
         }
         return em;
     }

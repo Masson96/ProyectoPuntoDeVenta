@@ -4,20 +4,22 @@ package Modelo;
 public class Empleado {
     
     int idEmpleado;
-    String dniEmpleado;
-    String nombreEmpleado;
-    String telefonoEmpleado;
-    String userEmpleado;
+    String dni;
+    String nombre;
+    String telefono;
+    String estado;
+    String user;
 
     public Empleado() {
     }
 
-    public Empleado(int idEmpleado, String dniEmpleado, String nombreEmpleado, String telefonoEmpleado, String userEmpleado) {
+    public Empleado(int idEmpleado, String dni, String nombre, String telefono, String estado, String user) {
         this.idEmpleado = idEmpleado;
-        this.dniEmpleado = dniEmpleado;
-        this.nombreEmpleado = nombreEmpleado;
-        this.telefonoEmpleado = telefonoEmpleado;
-        this.userEmpleado = userEmpleado;
+        this.dni = dni;
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.estado = estado;
+        this.user = user;
     }
 
     public int getIdEmpleado() {
@@ -28,38 +30,46 @@ public class Empleado {
         this.idEmpleado = idEmpleado;
     }
 
-    public String getDniEmpleado() {
-        return dniEmpleado;
+    public String getDni() {
+        return dni;
     }
 
-    public void setDniEmpleado(String dniEmpleado) {
-        this.dniEmpleado = dniEmpleado;
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
-    public String getNombreEmpleado() {
-        return nombreEmpleado;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreEmpleado(String nombreEmpleado) {
-        this.nombreEmpleado = nombreEmpleado;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getTelefonoEmpleado() {
-        return telefonoEmpleado;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setTelefonoEmpleado(String telefonoEmpleado) {
-        this.telefonoEmpleado = telefonoEmpleado;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
-    public String getUserEmpleado() {
-        return userEmpleado;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setUserEmpleado(String userEmpleado) {
-        this.userEmpleado = userEmpleado;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
-    
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
     
     
 }
